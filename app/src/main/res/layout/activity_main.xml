@@ -42,6 +42,9 @@
         app:layout_constraintVertical_bias="0.709"
         tools:ignore="MissingConstraints" />
 
+
+
+
     <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/gridLayout"
         android:layout_width="match_parent"
@@ -352,7 +355,6 @@
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
-
 
     </GridLayout>
 

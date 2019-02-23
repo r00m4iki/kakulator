@@ -161,7 +161,7 @@
     <Button
         android:id="@+id/btn_7"
         android:layout_width="0dp"
-        android:layout_height="100"
+        android:layout_height="100dp"
         android:text="@string/_7"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_4"
@@ -250,4 +250,3 @@
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
-    tools:context=".MainActivity"/>

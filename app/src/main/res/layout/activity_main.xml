@@ -10,40 +10,51 @@
     <TextView
         android:id="@+id/res"
         android:layout_width="match_parent"
-        android:layout_height="47dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
         android:gravity="right"
-        android:text=""
+        android:paddingRight="15dp"
+        android:text="test_text1"
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="55dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/all_res"
         android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
         android:gravity="right|center_vertical"
-        android:text=""
+        android:paddingRight="15dp"
+        android:text="test"
+        android:textAllCaps="false"
+        android:textColor="#FF989B9F"
+        android:textSize="30sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/res"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.709"
         tools:ignore="MissingConstraints" />
 
     <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridLayout"
         android:layout_width="match_parent"
-        android:layout_height="530dp"
+        android:layout_height="334dp"
         android:layout_centerHorizontal="true"
-        android:alignmentMode="alignBounds"
+        android:alignmentMode="alignMargins"
+        android:background="@color/colorAccent"
         android:columnCount="4"
         android:rowCount="5"
+        android:splitMotionEvents="false"
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="112dp">
+        tools:layout_editor_absoluteX="0dp">
 
         <Button
             android:id="@+id/btn_per"
@@ -56,13 +67,16 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/percent"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
+
             tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/btn_del_all"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_row="0"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
@@ -70,6 +84,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/del_all"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -86,6 +101,7 @@
             android:padding="10dp"
             android:paddingBottom="30dp"
             android:text="@string/del"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -100,6 +116,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/mul"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -114,6 +131,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/_1"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -128,6 +146,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/_2"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -142,6 +161,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/_3"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -156,6 +176,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/minus"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -170,6 +191,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/_4"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -184,6 +206,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/_5"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -199,6 +222,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/_6"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -213,6 +237,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/plus"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -227,6 +252,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/_7"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -241,6 +267,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/_8"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -256,6 +283,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/_9"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -270,6 +298,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/div"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -277,8 +306,8 @@
             android:id="@+id/btn_0"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_rowSpan="2"
             android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:background="@color/colorAccent"
@@ -286,6 +315,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/zero"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -301,6 +331,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/point"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
@@ -317,6 +348,7 @@
             android:maxHeight="70dp"
             android:padding="10dp"
             android:text="@string/res"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             tools:ignore="MissingConstraints" />
 
